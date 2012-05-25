@@ -9,10 +9,11 @@ Welcome to Curso de introducción a Django's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    introduccion
    python
+
 Indices and tables
 ==================
 

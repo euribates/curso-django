@@ -35,12 +35,11 @@ listado de responsabilidades:
 Cliente, servidor, peticion, respuesta, cabecera, tipos mime, contenido
 estáticos frente a contenidos dinámicos. Bases de datos. Memorias caché.
 
-Django está pensado para trabajar bien en cualquiera de estos escenarios,
-pero especialmente en el escenario B, que, afortunadamente, es el más
-habitual.  Podriamos usar django para un entorno muy sencillo, de pocas
-páginas estáticas,
-pero sería el equivalente a matar moscas a cañonazos. En el entorno C,
-bastante complejo y con necesidades y requerimientos muy grandes, puede
-quedarse corto. No es que no se puedan hacer, per seguramente habrá que
-realizar una labor de adaptación para conseguir el rendimiento deseado.
+Django está pensado para trabajar bien en cualquiera de estos escenarios, pero
+especialmente en el escenario B, que, afortunadamente, es el más habitual.
+Podriamos usar django para un entorno muy sencillo, de pocas páginas estáticas,
+pero sería el equivalente a matar moscas a cañonazos. En el entorno C, bastante
+complejo y con necesidades y requerimientos muy grandes, puede quedarse corto.
+No es que no se puedan hacer, per seguramente habrá que realizar una labor de
+adaptación para conseguir el rendimiento deseado.
 
