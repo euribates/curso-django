@@ -85,11 +85,11 @@ hay que pasar tantos valores como parámetros se hayan definido en la función.
 Python soporta también el paso de parámetros por nombre y los parámetros
 por omisión. Veamos estos dos casos, que están muy relacionados, con un ejemplo.
 
-Supongamos que necesitamos escribir una funcion que determine el área de un triángulo. ¿que
-parámetros necesita? Sabiendo que el área de un triángulo puede calcularse
-con la fórmula *base* por *altura* partido por dos, parece lógico suponer
-que necesitaremos dos parámetros, base y altura del triángulo. la función
-podría ser algo así::
+Supongamos que necesitamos escribir una funcion que determine el área de un
+triángulo. ¿que parámetros necesita? Sabiendo que el área de un triángulo puede
+calcularse con la fórmula *base* por *altura* partido por dos, parece lógico
+suponer que necesitaremos dos parámetros, base y altura del triángulo. la
+función podría ser algo así::
 
     def area_triangulo(base, altura):
         return (base * altura) / 2.0
