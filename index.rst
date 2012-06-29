@@ -12,7 +12,14 @@ Contents:
    :maxdepth: 3
 
    introduccion
+   desarrollo_web
    python
+   django
+   hola_mundo
+   plantillas
+   modelos
+   vistas
+   base_de_datos
 
 Indices and tables
 ==================
