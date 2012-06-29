@@ -136,30 +136,30 @@ que están acostumbrados a que los espacios no sean significativos.
 Sin embargo, tiene muchas ventajas:
 
  * La mayoría de los desarrolladores ya indentan el código de todas maneras.
- Usar el indentado para marcar los límites de los bloques de código simplifica
- la escritura y, sobre todo, la lectura del mismo. Presentele un trozo de
- código java relativamente complejo y sin ninguna indentación a un programador
- y lo primero que hará este, en un 99% de los casos [#n1]_, es indentar el código
- a su gusto mientras lo lee para entender como funciona.
-   
+   Usar el indentado para marcar los límites de los bloques de código simplifica
+   la escritura y, sobre todo, la lectura del mismo. Presentele un trozo de
+   código java relativamente complejo y sin ninguna indentación a un programador
+   y lo primero que hará este, en un 99% de los casos [#n1]_, es indentar el código
+   a su gusto mientras lo lee para entender como funciona.
+
  * En otros lenguajes, el indentado solo tiene una función decorativa, es una
- forma de simplificar la lectura del mismo, pero no tiene ningún significado
- real; la estructura será la que indiquen los marcadores de principio y fin de
- código. Muchos programadores se han dejdo las pestañas intentando encontrar un
- error en el flujo del programa porque ha indentado mal (o ha indentado bien
- pero se le han escapado un par de llaves, por ejemplo). Si el indentado y las
- marcas no concuerdan, puede ser un problema, porque es mucho más fácil leer el
- indentado que las marcas, sobre todo si el código es extenso.
+   forma de simplificar la lectura del mismo, pero no tiene ningún significado
+   real; la estructura será la que indiquen los marcadores de principio y fin de
+   código. Muchos programadores se han dejdo las pestañas intentando encontrar un
+   error en el flujo del programa porque ha indentado mal (o ha indentado bien
+   pero se le han escapado un par de llaves, por ejemplo). Si el indentado y las
+   marcas no concuerdan, puede ser un problema, porque es mucho más fácil leer el
+   indentado que las marcas, sobre todo si el código es extenso.
 
  * No hay distintas formas de indentar código. En C y sus derivados hay tantas
- formas que incluso se agrupan por familias, según su semejanza. Casi podriamos
- decir que hay tantos estilos de indentación como desarrolladores. En Python
- solo hay que limitarse a decidir entre espacios y tabuladores --lo recomendado
- son espacios-- y en su caso, cuantos espacios usar para cada nivel de
- indentación --lo recomendado son 4 espacios--.
+   formas que incluso se agrupan por familias, según su semejanza. Casi podriamos
+   decir que hay tantos estilos de indentación como desarrolladores. En Python
+   solo hay que limitarse a decidir entre espacios y tabuladores --lo recomendado
+   son espacios-- y en su caso, cuantos espacios usar para cada nivel de
+   indentación --lo recomendado son 4 espacios--.
 
  * Además, nos ahorramos dos caracteres o palabras reservadas, que se pueden
- usar en otras partes.
+   usar en otras partes.
 
 No hay métodos ni propiedades privadas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
