@@ -1,8 +1,8 @@
 Introducción a Python
----------------------------
+===============================================================================
 
 Estructuras de datos
-===========================
+-------------------------------------------------------------------------------
 
 Tipos de datos básicos:
 
@@ -12,13 +12,13 @@ Tipos de datos básicos:
 
 Tipos de datos compuestos:
 
- * Listas
- * Diccionarios
- * Tuplas
- * Conjuntos
+ * Listas (falta)
+ * Diccionarios  (falta)
+ * Tuplas (falta)
+ * Conjuntos (falta)
 
 Estructuras de control
-=============================
+-------------------------------------------------------------------------------
 
 if
 
@@ -27,24 +27,23 @@ for
 while
 
 Funciones, clases y modulos
-=============================
+-------------------------------------------------------------------------------
 
 Funciones
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Una función no es más que un fragmento de programa que queremos
-reutilizar. Para ello le damos un nombre. también definimos unos nombres
-para las variables que les vamos a pasar, si es que se le
-pasa alguna. En este caso, estas variables que sirven para pasar
-información hacia o desde la función se llaman **parámetros**. También
-podemos especificar, si lo queremos, uno
-o varios valores de retorno (Para los que hayan levantado una ceja
-cuando han visto lo de "varios valores de retorno", esplicaremos
-esto en la última sección de este capítulo, "Para programadores
-con experiencia en otros lenguajes").
+Una función no es más que un fragmento de programa que queremos reutilizar.
+Para ello le damos un nombre. también definimos unos nombres para las
+variables que les vamos a pasar, si es que se le pasa alguna. En este caso,
+estas variables que sirven para pasar información hacia o desde la función se
+llaman **parámetros**. También podemos especificar, si lo queremos, uno o
+varios valores de retorno (Para los que hayan levantado una ceja cuando han
+visto lo de "varios valores de retorno", esplicaremos esto en la última
+sección de este capítulo, "Para programadores con experiencia en otros
+lenguajes").
 
-Veamos con un ejemplo una función, la que nos da el perímetro
-de una circuferencia pasándole el radio de la misma::
+Veamos con un ejemplo una función, la que nos da el perímetro de una
+circuferencia pasándole el radio de la misma::
 
     def perimetro_circunferencia(radio):
         import math
@@ -111,10 +110,24 @@ en la lista de
 
 
 Librerías incluidas
-=============================
+------------------------------------------------------------------------------
+
+Otra de las grandes ventajas de Python es la amplia librería que viene
+incluida con el lenguaje. La mayor parte de las librerias estandar 
+están escritas en el propio Python, mientras que un pequeño número 
+de ellas está escrito en C, por razones de rendimiento. En algunos casos
+se incluyen dos versiones de la librería, una escrita en Python, más
+portable pero más lenta, y otra en C, más rápida. Es el caso, por
+ejemplo, de la librería StringIO_, que tiene una versión en C más rápida
+y eficiente que podemos importar como cStringIO_. Las dos implementan
+una clase cuyas instancias se comportan como si fueran ficheros, pero
+cuyo contenido está en memoria.
+
+.. _StringIO: http://docs.python.org/library/stringio.html
+.. _cStringIO: http://docs.python.org/library/cstringio.html
 
 Para programadores con experiencia en otros lenguajes
-=======================================================
+------------------------------------------------------------------------------
 
 Python, como cualquier otro lenguaje, tiene sus formas particulares
 de realizar algunas tareas, algunas de ellas pueden ser más
@@ -125,7 +138,7 @@ Vamos a ver rápidamente algunas de estos modismos o costumbres
 que pueden sorprender a los más experimentados.
 
 Para definir bloques de código se usa el sangrado
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Es decir, no hay marcas de principio y fin de bloque, como en Pascal, Delphi
 (BEGIN, END) o C, Java, C# (Llaves de apertura y cierre { y }). La indentación
@@ -162,7 +175,7 @@ Sin embargo, tiene muchas ventajas:
    usar en otras partes.
 
 No hay métodos ni propiedades privadas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En lenguajes orientados a objetos como C++, java o C# a veces es posible
 proteger determinados métodos o propiedades de nuestras clases, de
@@ -190,7 +203,7 @@ lo hagas no porque tengas una escopeta de cañones recortados, sino porque no
 estás invitado."
 
 Estructuras de datos integradas en el lenguaje
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En otros lenguajes, hay estructuras de datos como
 pilas, colas, mapas (hash), tuplas, etc... que, por su gran utilidad,
@@ -228,7 +241,7 @@ siendo necesarias, pero se hacen internamente, con más rápidez y menos
 posibilidad de error [#n3]_. 
 
 Las Funciones pueden devolver más de resultado
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En otros lenguajes, las funciones solo pueden devolver un único resultado. En
 python, las funciones pueden devolver más de una variable. Esto es posible
@@ -248,7 +261,7 @@ Este pequeño programa nos informa de que 47 dividido por 49 da cinco, con resto
 de otra manera, que (9 * 5) + 2 = 47
 
 Las asignaciones pueden encadenarse
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gracias a la magia de las tuplas y al empaquetado y desempaquetado automatico de
 las mismas, junto con algún que otro truco, las expresiones siguientes son
@@ -278,7 +291,7 @@ o, más legible::
 
 
 Las funciones son objetos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Las funciones son objetos en si mismo, es decir, que podemos hacer con ellas
 cosas que en otros lenguajes serían imposibles. Por ejemplo, podemos tener un
