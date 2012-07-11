@@ -1,8 +1,8 @@
 Desarrollo web
---------------------------------------------------------------------------------
+================================================================================
 
 Internet y la World Wide Web
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------------------------------
 
 Allá por 1980, un joven físico fue contratado por el CERN_, en calidad de
 consultor independiente. Entre otras cosas, el joven propuso un proyecto para
@@ -191,7 +191,7 @@ como tipo/subtipo MIME. Por ejemplo, una imagen en formato PNG tiene un tipo/sub
 
 
 Una petición web sencilla
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 Ahora que hemos visto las tecnologías implicadas, podemos entender como es una
 operación típica en la web, o al menos, como era uno operación típica en la web
@@ -258,7 +258,7 @@ bastante sencillo.
 { Incluir gráfico de servicio cliente-servidor web 1995 }
 
 Si es tan sencillo ¿Para que necesito un *framework*?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------------------------------
 
 La respuesta rápida es: porque yo no estamos en 1995. El escenario típico
 de una petición web es considerablemente más complejo ahora. Hay nuevas 
