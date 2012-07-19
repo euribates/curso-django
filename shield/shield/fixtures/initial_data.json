@@ -1,0 +1,116 @@
+[
+    {
+        "pk": 1,
+        "model": "shield.equipo",
+        "fields": {
+            "nombre_equipo": "Vengadores",
+            "f_creacion": "2012-07-20",
+            "Direccion": "Mansi\u00f3n de los Vengadores"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "shield.equipo",
+        "fields": {
+            "nombre_equipo": "Sin equipo",
+            "f_creacion": "2012-07-20",
+            "Direccion": "Nonsense"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Volar",
+            "nombre_poder": "volar"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Agilidad aumentada",
+            "nombre_poder": "agilidad"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Fuerza aumentada",
+            "nombre_poder": "superfuerza"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Alerta de posibles peligros",
+            "nombre_poder": "sentido ar\u00e1gnido"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Sentido de ecolocalozaci\u00f3n",
+            "nombre_poder": "radar"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "shield.poder",
+        "fields": {
+            "descripcion": "Puede pegarse a las paredes",
+            "nombre_poder": "adhesividad corporal"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "shield.heroe",
+        "fields": {
+            "nivel": 30,
+            "foto": "fotos/peter-parker-spiderman-400a111306.jpg",
+            "f_nacimiento": "1963-07-11",
+            "correo": "pparker@daylybugle.com",
+            "grupo_sanguineo": "A",
+            "poderes": [
+                2,
+                3,
+                4,
+                6
+            ],
+            "identidad": "Parker, Peter",
+            "equipo": 1,
+            "nombre_heroe": "Spiderman"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "shield.heroe",
+        "fields": {
+            "nivel": 25,
+            "foto": "fotos/matt-murdock_2.jpg",
+            "f_nacimiento": "1967-07-20",
+            "correo": "matt@murdockandnelson.com",
+            "grupo_sanguineo": "O",
+            "poderes": [
+                2,
+                5
+            ],
+            "identidad": "Murdock, Matt",
+            "equipo": 2,
+            "nombre_heroe": "Daredevil"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "shield.avistamiento",
+        "fields": {
+            "latitud": 40.475566,
+            "heroe": 1,
+            "longitud": 76.48294,
+            "f_avistamiento": "2012-07-19T23:18:19Z"
+        }
+    }
+]
