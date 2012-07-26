@@ -12,6 +12,11 @@ class Equipo(models.Model):
         return self.nombre_equipo
     
 class Poder(models.Model):
+
+    class Meta:
+        verbose_name = 'Poder'
+        verbose_name_plural = 'Poderes'
+
     nombre_poder = models.CharField(max_length=32)
     descripcion = models.CharField(max_length=500)
 
@@ -41,6 +46,9 @@ class Heroe(models.Model):
 
     def __unicode__(self):
         return self.nombre_heroe
+
+    def lista_poderes(self):
+        return ', '.join([x.nombre_poder for x in self.poderes.all()])
 
 class Avistamiento(models.Model):
     f_avistamiento = models.DateTimeField()
