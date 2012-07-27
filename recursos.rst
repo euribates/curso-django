@@ -11,3 +11,9 @@ http://www.django-apps.com/
 https://code.djangoproject.com/wiki/DjangoResources
 
 http://www.djangosites.org/
+
+Python
+
+http://www.python.org/
+
+http://www.learnpython.org/
