@@ -1,0 +1,36 @@
+Las plantillas son pontentes
+Pero no demasiado
+La idea es que las cosas sencillas se hagen en la plantilla, y las difíciles, en la vista
+
+Explicar {{ }}
+
+Explicar {% %}
+
+{% block %}
+
+{% for %}
+
+{% if %}
+
+{% include %}
+
+{% extends %}
+
+Lo mejor de las plantillas es que son heredables
+
+
+Creamos en el directorio shield interno:
+    static
+       static/css
+       static/images
+    templates
+    	templates/shield
+
+Creamos en el directorio shield externo
+    static
+
+    Aradecimientos
+
+Plnatilla de base cortesía de:
+    
+    http://www.freecsstemplates.org/preview/unofficialchannels/
