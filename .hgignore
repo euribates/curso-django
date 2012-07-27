@@ -1,8 +1,8 @@
 syntax: regexp
 
-_build
-shield/static
-shield/media
+^_build
+^shield/static
+^shield/media
 
 syntax:glob
 
