@@ -20,6 +20,7 @@ Contents:
    modelos
    vistas
    base_de_datos
+   recursos 
 
 Indices and tables
 ==================
