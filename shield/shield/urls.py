@@ -10,6 +10,8 @@ urlpatterns = patterns('',
     # url(r'^shield/', include('shield.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
+    url(r'^/?$', 'shield.views.homepage'),
+    url(r'^heroes/?$', 'shield.views.heroes'),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:

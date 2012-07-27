@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Unofficial Channels
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120723
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>
+			Unofficial Channels by FCT
+		</title>
+		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+	</head>
+	<body>
+		<div id="bg1"></div>
+		<div id="bg2"></div>
+		<div id="outer">
+			<div id="header">
+				<div id="logo">
+					<h1>
+						<a href="#">S.H.I.E.L.D.</a>
+					</h1>
+				</div>
+				<div id="search">
+					<form action="" method="post">
+						<div>
+							<input class="text" name="search" size="32" maxlength="64" />
+						</div>
+					</form>
+				</div>
+				{% block  menu %}
+				<div id="nav">
+					<ul>
+						<li class="first">
+							<a href="/heroes/">Heroes</a>
+						</li>
+						<li>
+							<a href="#">Enlaces</a>
+						</li>
+						<li>
+							<a href="#">Servicios</a>
+						</li>
+						<li>
+							<a href="#">Acerca de</a>
+						</li>
+						<li>
+							<a href="#">Descargas</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Alertas</a>
+						</li>
+						<li class="last">
+							<a href="#">Contacto</a>
+						</li>
+					</ul><br class="clear" />
+				</div>
+				{% endblock menu %}
+			</div>
+			<div id="banner">
+				<div class="captions">
+					<h2>Strategic &nbsp; Homeland &nbsp; Intervention, &nbsp;Enforcement &nbsp; and &nbsp; Logistics &nbsp; Division</h2>
+				</div>
+				<img src="/static/images/banner.jpg" alt="" />
+			</div>
+			<div id="main">
+				<div id="sidebar">
+				{% block sidebar %}
+					<div class="box">
+						<h3>
+							Augue orci
+						</h3>
+						<div class="dateList">
+							<ul class="linkedList dateList">
+								<li class="first">
+									<span class="date">Jul 23</span> <a href="#">Ante sed fringilla</a>
+								</li>
+								<li>
+									<span class="date">Jul 18</span> <a href="#">Turpis dolor risus</a>
+								</li>
+								<li>
+									<span class="date">Jul 7</span> <a href="#">Nunc venenatis iaculis</a>
+								</li>
+								<li>
+									<span class="date">Jul 2</span> <a href="#">Lorem ipsum etiam</a>
+								</li>
+								<li>
+									<span class="date">Jun 28</span> <a href="#">Sed phaslleus dolor</a>
+								</li>
+								<li class="last">
+									<span class="date">Jun 24</span> <a href="#">Arcu phasellus</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<h3>
+							Morbi tortor eget
+						</h3>
+						<p>
+							Lectus venenatis pharetra mauris nisl cum neque adipiscing. Turpis ridiculus leo scelerisque.
+						</p>
+						<ul class="linkedList">
+							<li class="first">
+								<a href="#">Luctus curae vitae</a>
+							</li>
+							<li>
+								<a href="#">Duis justo parturient lectus</a>
+							</li>
+							<li>
+								<a href="#">Nullam fermentum cras sociis</a>
+							</li>
+							<li class="last">
+								<a href="#">Natoque sapien suscipit</a>
+							</li>
+						</ul>
+					</div>
+				{% endblock sidebar %}
+				</div>
+				<div id="content">
+				{% block content %}
+					
+		{% endblock content %}
+		</div>
+		<div id="copyright">
+			&copy; Your Sitename. Design by <a href="http://www.freecsstemplates.org/">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.
+		</div>
+	</body>
+</html>
