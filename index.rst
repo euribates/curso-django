@@ -16,10 +16,12 @@ Contents:
    python
    django
    hola_mundo
-   plantillas
-   modelos
    vistas
    base_de_datos
+   modelos
+   plantillas
+   admin
+   ejemplo_01
    recursos 
 
 Indices and tables
