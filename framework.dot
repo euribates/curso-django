@@ -1,5 +1,6 @@
 Digraph G {
     program -> library;
 
+    program -> framework;
     framework -> program;
     }
