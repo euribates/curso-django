@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'shield.views.home', name='home'),
     # url(r'^shield/', include('shield.foo.urls')),
+    (r'^/ejemplo/$', 'shield.views.ejemplo'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^/?$', 'shield.views.homepage'),

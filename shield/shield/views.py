@@ -8,6 +8,12 @@ from shield import models
 
 import datetime
 
+def ejemplo(request):
+    return render_to_response(
+        'shield/base.html',
+        locals()
+        )
+
 def homepage(request):
     return render_to_response(
         'shield/homepage.html',
