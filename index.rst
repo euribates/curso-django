@@ -21,6 +21,7 @@ Contents:
    modelos
    plantillas
    admin
+   manage
    ejemplo_01
    recursos 
 
