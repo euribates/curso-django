@@ -87,7 +87,9 @@ importarlos.
 
 En cualquier caso, no se un mecanismo recomendable para realizar copias de
 seguridad, pera eso siempre es mejor usar las herramientas que cada gestor de
-bases de datos nos suministre.
+bases de datos nos suministre; son muchos más eficientes, nos proporcionan 
+muchas más posibilidades y se integran mejor con los sistemas de copia de
+seguridad centralizados.
 
 La orden **dumpdata**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
