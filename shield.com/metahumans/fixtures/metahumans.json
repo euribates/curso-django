@@ -1,0 +1,512 @@
+[
+{
+    "fields": {
+        "description": "volar por sus propios medios",
+        "name": "Vuelo",
+        "slug": "vuelo"
+    },
+    "model": "metahumans.power",
+    "pk": 1
+},
+{
+    "fields": {
+        "description": "aplicar una fuerza superior a la de cualquier humano normal",
+        "name": "Superfuerza",
+        "slug": "superfuerza"
+    },
+    "model": "metahumans.power",
+    "pk": 2
+},
+{
+    "fields": {
+        "description": "ver por la noche",
+        "name": "Vision noctura",
+        "slug": "vision_nocturna"
+    },
+    "model": "metahumans.power",
+    "pk": 3
+},
+{
+    "fields": {
+        "description": "moverse y reaccionar a velocidades superiores a las de cualquier humano normal",
+        "name": "Supervelocidad",
+        "slug": "supervelocidad"
+    },
+    "model": "metahumans.power",
+    "pk": 4
+},
+{
+    "fields": {
+        "description": "percibir su entorno mediante ecolocalizaci\u00f3n",
+        "name": "Radar",
+        "slug": "radar"
+    },
+    "model": "metahumans.power",
+    "pk": 5
+},
+{
+    "fields": {
+        "description": "lanzar rayos de energ\u00eda desde sus ojos",
+        "name": "Rayos \u00f3pticos",
+        "slug": "rayos-opticos"
+    },
+    "model": "metahumans.power",
+    "pk": 6
+},
+{
+    "fields": {
+        "description": "transportarse de forma instaneamente entre dos lugares diferentes",
+        "name": "Teletransporte",
+        "slug": "teletransporte"
+    },
+    "model": "metahumans.power",
+    "pk": 7
+},
+{
+    "fields": {
+        "description": "leer o enviar informaci\u00f3n a la mente sin uso de agentes f\u00edsicos",
+        "name": "Telepat\u00eda",
+        "slug": "telepatia"
+    },
+    "model": "metahumans.power",
+    "pk": 8
+},
+{
+    "fields": {
+        "description": "respirar bajo el agua",
+        "name": "Anfibio",
+        "slug": "anfibio"
+    },
+    "model": "metahumans.power",
+    "pk": 9
+},
+{
+    "fields": {
+        "description": "recibir impactos sin que le afecte",
+        "name": "Invulnerable",
+        "slug": "invulnerable"
+    },
+    "model": "metahumans.power",
+    "pk": 10
+},
+{
+    "fields": {
+        "description": "sentir la presencia de amenazas y enemigos",
+        "name": "Sentido ar\u00e1cnido",
+        "slug": "sentido-aracnido"
+    },
+    "model": "metahumans.power",
+    "pk": 11
+},
+{
+    "fields": {
+        "description": "adherirse a casi cualquier superficie y trepar por ellas",
+        "name": "Superadherencia",
+        "slug": "superadherencia"
+    },
+    "model": "metahumans.power",
+    "pk": 12
+},
+{
+    "fields": {
+        "description": "hacerse invisible",
+        "name": "Invisibilidad",
+        "slug": "invisibilidad"
+    },
+    "model": "metahumans.power",
+    "pk": 13
+},
+{
+    "fields": {
+        "description": "proyectar campos de fuerza",
+        "name": "Campos de fuerza",
+        "slug": "campos-de-fuerza"
+    },
+    "model": "metahumans.power",
+    "pk": 14
+},
+{
+    "fields": {
+        "description": "moverse m\u00e1s r\u00e1pido y con m\u00e1s potencia y precisi\u00f3n que un humano normal",
+        "name": "Superagilidad",
+        "slug": "superagilidad"
+    },
+    "model": "metahumans.power",
+    "pk": 15
+},
+{
+    "fields": {
+        "name": "Los 4 Fant\u00e1sticos",
+        "created": "2015-10-06",
+        "headquarters": "Edificio Baxter, Manhattan, New York (EEUU)",
+        "modified": "2015-10-06T20:31:20.497Z",
+        "active": true,
+        "slug": "cuatro-fantasticos",
+        "description": "Tras ser expuestos accidentalmente a dosis masivas de rayos c\u00f3smicos, Reed Richards, Susan Storm, Ben Grimm y Johnny Storm adquirieron poderes extraordinarios."
+    },
+    "model": "metahumans.team",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Los Vengadores",
+        "created": "2015-10-06",
+        "headquarters": "Mansi\u00f3n Stark, New Tork, EEUU",
+        "modified": "2015-10-06T21:17:41.717Z",
+        "active": true,
+        "slug": "vengadores",
+        "description": "Los heroes m\u00e1s grandes de la Tierra, unidos para hacer fernte a aquills enemigos que no podr\u00edan derrotar solos."
+    },
+    "model": "metahumans.team",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Los Invasores",
+        "created": "2015-10-06",
+        "headquarters": "N/A",
+        "modified": "2015-10-06T21:21:13.494Z",
+        "active": false,
+        "slug": "invasores",
+        "description": "El grupo fue creado a finales de 1941, cuando Estados Unidos comenz\u00f3 a luchar en la Segunda Guerra Mundial. Se form\u00f3 para combatir contra el imperio nazi de Adolf Hitler. Esta formaci\u00f3n supuso la primera reuni\u00f3n de un grupo de s\u00faper h\u00e9roes."
+    },
+    "model": "metahumans.team",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "La Patrulla X",
+        "created": "2015-10-06",
+        "headquarters": "Instituto Xavier para J\u00f3venes Talentos. 1407 Graymalkin Lane en North Salem, Westchester, New York (EEUU)",
+        "modified": "2015-10-06T21:27:25.394Z",
+        "active": true,
+        "slug": "x-men",
+        "description": " Los protagonistas de X-Men son un grupo de ellos; los mutantes se caracterizan, de entre los personajes superher\u00f3icos de los c\u00f3mics, porque han adquirido superpoderes gracias a mutaciones y cambios en su estructura gen\u00e9tica."
+    },
+    "model": "metahumans.team",
+    "pk": 4
+},
+{
+    "fields": {
+        "name": "Vengadores Costa Oeste",
+        "created": "2015-10-06",
+        "headquarters": "Rancho de los Vengadores, California, EEUU",
+        "modified": "2015-10-06T22:49:32.590Z",
+        "active": false,
+        "slug": "vengadores-costa-oeste",
+        "description": "Filial de Los Vengadores en la costa oeste de estaos Unidos"
+    },
+    "model": "metahumans.team",
+    "pk": 5
+},
+{
+    "fields": {
+        "name": "La Legi\u00f3n de la Libertad",
+        "created": "2015-10-06",
+        "headquarters": "",
+        "modified": "2015-10-06T22:52:09.865Z",
+        "active": false,
+        "slug": "legion-de-la-libertad",
+        "description": ""
+    },
+    "model": "metahumans.team",
+    "pk": 6
+},
+{
+    "fields": {
+        "name": "El \u00c1ngel",
+        "level": 1,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T21:54:48.722Z",
+        "email": "",
+        "alter_ego": "",
+        "team": 4,
+        "active": true,
+        "slug": "angel",
+        "description": "Mutante con alas"
+    },
+    "model": "metahumans.superhero",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Namor",
+        "level": 5,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:56:47.450Z",
+        "email": "",
+        "alter_ego": "",
+        "team": 3,
+        "active": true,
+        "slug": "namor",
+        "description": "Rey de Atl\u00e1ntis. Mutante."
+    },
+    "model": "metahumans.superhero",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Capit\u00e1n Am\u00e9rica",
+        "level": 1,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:10:00.464Z",
+        "email": "",
+        "alter_ego": "",
+        "team": 2,
+        "active": true,
+        "slug": "capitan-america",
+        "description": "\u00danico resultado exitoso del proyecto supersoldado"
+    },
+    "model": "metahumans.superhero",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "Spiderman",
+        "level": 4,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:54:42.982Z",
+        "email": "",
+        "alter_ego": "Peter Parker",
+        "team": null,
+        "active": true,
+        "slug": "spiderman",
+        "description": "Mordido por una ara\u00f1a radioactiva, el joven Peter Parker descubrio que los grandes poderes que hab\u00eda obtenido debien corresponderse con una gran responsabilidad"
+    },
+    "model": "metahumans.superhero",
+    "pk": 4
+},
+{
+    "fields": {
+        "name": "Power Man",
+        "level": 0,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:24:55.353Z",
+        "email": "",
+        "alter_ego": "Luke Cage (Tambi\u00e9n Carl Lucas)",
+        "team": 2,
+        "active": true,
+        "slug": "power-man",
+        "description": "Sometido a un procedimiento experimental que le otorg\u00f3 una piel tan dura como el titanio y una fuerza sobre humana"
+    },
+    "model": "metahumans.superhero",
+    "pk": 5
+},
+{
+    "fields": {
+        "name": "Profesor X",
+        "level": 9,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:29:15.731Z",
+        "email": "root@xavierinstitute.edu",
+        "alter_ego": "Charles Francis Xavie",
+        "team": 4,
+        "active": true,
+        "slug": "profesor-x",
+        "description": "Cuenta con la mente mutante m\u00e1s poderosa del mundo. Como tel\u00e9pata que es, Xavier puede leer, controlar e influir en la mente humana. Es un genio cient\u00edfico con una habilidad sobrehumana para absorber informaci\u00f3n, siendo adem\u00e1s una autoridad l\u00edder en gen\u00e9tica, mutaci\u00f3n y poderes psi\u00f3nicos."
+    },
+    "model": "metahumans.superhero",
+    "pk": 6
+},
+{
+    "fields": {
+        "name": "Caballero Luna",
+        "level": 2,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:46:02.873Z",
+        "email": "",
+        "alter_ego": "Marc Spector",
+        "team": 5,
+        "active": true,
+        "slug": "caballero-luna",
+        "description": "Antiguo mercenario"
+    },
+    "model": "metahumans.superhero",
+    "pk": 7
+},
+{
+    "fields": {
+        "name": "La Mujer Invisible",
+        "level": 8,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:49:06.607Z",
+        "email": "",
+        "alter_ego": "Susan Strom",
+        "team": 1,
+        "active": true,
+        "slug": "mujer-invisible",
+        "description": "Miembro inicial de los cuatro fant\u00e1sticos"
+    },
+    "model": "metahumans.superhero",
+    "pk": 8
+},
+{
+    "fields": {
+        "name": "El Zumbador",
+        "level": 0,
+        "created": "2015-10-06",
+        "modified": "2015-10-06T22:56:20.151Z",
+        "email": "",
+        "alter_ego": "El Zumbador",
+        "team": 6,
+        "active": false,
+        "slug": "zumbador",
+        "description": "Actu\u00f3 en la Segunda Guerra Mundial"
+    },
+    "model": "metahumans.superhero",
+    "pk": 9
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 1,
+        "power": 1
+    },
+    "model": "metahumans.capabilities",
+    "pk": 1
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 2,
+        "power": 1
+    },
+    "model": "metahumans.capabilities",
+    "pk": 2
+},
+{
+    "fields": {
+        "scale": 5,
+        "superhero": 2,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 3
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 2,
+        "power": 9
+    },
+    "model": "metahumans.capabilities",
+    "pk": 4
+},
+{
+    "fields": {
+        "scale": 8,
+        "superhero": 2,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 5
+},
+{
+    "fields": {
+        "scale": 3,
+        "superhero": 4,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 6
+},
+{
+    "fields": {
+        "scale": 3,
+        "superhero": 4,
+        "power": 15
+    },
+    "model": "metahumans.capabilities",
+    "pk": 7
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 4,
+        "power": 11
+    },
+    "model": "metahumans.capabilities",
+    "pk": 8
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 4,
+        "power": 12
+    },
+    "model": "metahumans.capabilities",
+    "pk": 9
+},
+{
+    "fields": {
+        "scale": 4,
+        "superhero": 5,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 10
+},
+{
+    "fields": {
+        "scale": 6,
+        "superhero": 5,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 11
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 6,
+        "power": 8
+    },
+    "model": "metahumans.capabilities",
+    "pk": 12
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 7,
+        "power": 3
+    },
+    "model": "metahumans.capabilities",
+    "pk": 13
+},
+{
+    "fields": {
+        "scale": 2,
+        "superhero": 7,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 14
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 8,
+        "power": 13
+    },
+    "model": "metahumans.capabilities",
+    "pk": 15
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 8,
+        "power": 14
+    },
+    "model": "metahumans.capabilities",
+    "pk": 16
+},
+{
+    "fields": {
+        "scale": 7,
+        "superhero": 9,
+        "power": 4
+    },
+    "model": "metahumans.capabilities",
+    "pk": 17
+}
+]
