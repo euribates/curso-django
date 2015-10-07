@@ -67,7 +67,7 @@ class SuperHero(models.Model):
         default=0,
         validators=[between_zero_and_one_hundred,]
         )
-    created = models.DateField(auto_now_add=True)
+    created = models.DateField('Fecha de creación', auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
     email = models.EmailField(blank=True)

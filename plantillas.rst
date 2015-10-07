@@ -1,7 +1,134 @@
 Plantillas
 ===============================================================================
 
-Las plantillas en Django juegan, en parte, el rol de las V en el modelo MVC (Si, es un poco confuso). [Repetir ejemplo del hola mundo pero con plantillas]
+Vamos a reimlpementar el ejemplo de hola, mundo, usado plantillas. Vamos a ir
+haciendo la cosas poco a poco, de forma que empezaremos por hacer las cosas
+rápido y mal, para luego ir paso a paso mejorandolas hasta llegar a la forma
+"correcta". De esa forma entenderemos mejor el porqué de algunas de las
+decisiones tomadas en el diseño de Django.
+
+Las plantillas son simplmente documentos de texto, normalmente html (Aunque nada
+impide que se use con cualquier otro tipo  de textos, como XML o código
+C). En el texto de las plantillas hay ciertos marcas o etiquetas (**template
+tags**) que indican que en ese sitio falta contenido, el cual será incluido más
+adelante. La etiqueta más sencilla tiene la forma::
+
+    {{ nombre }}
+
+que indica que en el resultado final sustituiremos todo el texto comprendido
+entre las marcas ``{{`` y ``}}`` (Incluyendo las marcas) por el contenido
+de una variable llamada ``nombre``. Como siempre, es más fácil verlo con
+un ejemplo.
+
+Podemos crear una plantilla instanciandola de la 
+clase ``django.template.Template``. Al instanciarla, podemos indicarle el texto
+que queremos usar como plantilla, pasándolo com argumento. Algo así::
+
+    from django.templates import Template
+
+    t = Template('Hola, {{ nombre }}. ¿Cómo estás?')
+
+Podmos ahora fusionar esta plantilla ``t`` con algo que tenga el dato que
+queremos incluir, el nombre. Para ello se usa un objeto de la clase
+``Context``, que podemos crear pasándole un diccionario con las parejas
+nombre/valor que queremos usar en la plantilla. Este objeto será el **contexto**
+que usara la plantilla para producir un resulltado final. Dicho y hecho::
+
+    from django.template import Template, Context
+
+    t = Template('Hola, {{ nombre }}. ¿Cómo estás?')
+    ctx = Context({'nombre': 'Stan Lee'})
+
+La fusión de plantilla se realiza con el método ``render`` de la plantilla. Le
+pasamos el contexto deseado y devuelve el texto final, con los datos
+sustituyendo las marcas. Diferentes contextos producen diferents resultados para
+la misma plantilla::
+
+    from django.template import Template, Context
+
+    t = Template('Hola, {{ nombre }}. ¿Cómo estás?')
+    ctx = Context({'nombre': 'Stan Lee'})
+    assert t.render(ctx) == 'Hola, Stan Lee. ¿Cómo estás?'
+    ctx = Context({'nombre': 'Jack Kirby'})
+    assert t.render(ctx) == 'Hola, Jack Kirby. ¿Cómo estás?'
+
+Usando plantillas, nuestra primera aproximación podría ser::
+
+    from django.http import HttpResponse
+    from django.shortcuts import render
+    from django.template import Template, RequestContext
+
+    def homepage(request):
+        t = Template('''<html>
+        <head>
+          <title>Shield.com</title>
+        </head>
+        <body>
+        <h1>Bienvenidos a S.H.I.E.L.D.</h1>
+        <p>{{ message }}</p>
+        </body>
+        </html>''')
+        ctx = RequestContext(request, {
+            'message': '¡En obras! Pronto abriremos',
+            })
+        return HttpResponse(t.render(ctx))
+
+El primer cambio es sustituir el objeto ``Context`` por una versión mś potente
+(Nos será de utilidad más adelante), llamada ``RequestContext``. Esta versión
+funciona igual que el ``Context`` pero nos añade mucha información sacándola de
+la petición ``request`` que va como primer parámetro en todas las vistas. Para
+instanciar un ``RequestContext`` le pasamos el objeto  request y como segundo
+parámetro el diccinario con nuestros datos.
+
+Obviamente, cargar el texto de la plantilla desde el propio código no es muy
+operativo. Podriamos usar una función para leer el contenido de la plantilla
+desde ficheros externos, pero como pasa a menudo, la gente de django ya se nos
+ha adelantado. Podemos confiar en el cargador de plantillas de Django para que
+carge las plantillas desde el sistema de ficheros, lo que nos alivia
+considerable el  trabajo, que es de lo que se trata. Veamos como funciona.
+
+Si le decimos a django que nos busque una plantilla determinada, indicandole el
+nombre de un fichero, por ejemplo, ``hola.html``, el cargador que  viene activo
+por defecto busca dentro de cada una de las aplicaciones instaladas una carpeta
+que se llame ``templates``. Si en cualquiera de esos directorios encuentra un
+archivo que se llame ``hola.html``, creará una plantilla a partir del texto de
+ese fichero. Si existe más de un fichero `hola.html``, usará el primero que
+encuentre. esto puede ser útil en alguna ocasión. También puede ser fuente de
+errores y frustación, en otras.
+
+Creemos un directorio ``templantes`` dentro de nuesta única aplicación por
+ahora, y dentro escribimos un fichero ``homepage.html``. El código quedaría ahora
+así (No incluyo los imports, que son los mismos del ejemplo anterior)::
+
+    from django.templae.loader import get_template
+
+    def homepage(request):
+        t = get_template('homepage.html')
+        ctx = RequestContext(request, {
+            'message': '¡En obras! Pronto abriremos',
+            })
+        return HttpResponse(t.render(ctx))
+
+
+Es tan frecuente esta secuencia de operaciones: Obtener una plantilla,
+fusionarla con una serie de datos que hemos obtenido o calculado
+previamente, usando un ``RequestContext``, y devolver el
+resultado en forma de ``HttpResponse`` que hay una forma abreviada
+para hacerlo todo en un solo paso: la función ``django.shortcuts.render``. Usándola, el código final quedaría asi::
+
+    from django.shortcuts import render
+    from django.template import RequestContext
+
+    def homepage(request):
+        ctx = { 'message': '¡En obras! Pronto abriremos' }
+        return render(request, 'homepage.html', ctx)
+
+Ya no hace falta importar get_template, ni RequestContext ni HttpResponse.
+
+
+
+
+
 
 Herencia de plantillas
 -----------------------------------------------------------------------
