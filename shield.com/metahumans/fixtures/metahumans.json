@@ -136,6 +136,51 @@
 },
 {
     "fields": {
+        "description": "controlar el fuego",
+        "name": "Pirokin\u00e9tico",
+        "slug": "pirokinetico"
+    },
+    "model": "metahumans.power",
+    "pk": 16
+},
+{
+    "fields": {
+        "description": "convertir su cuerpo en una forma energ\u00e9tica",
+        "name": "plasma",
+        "slug": "plasma"
+    },
+    "model": "metahumans.power",
+    "pk": 17
+},
+{
+    "fields": {
+        "description": "lanzar descargas energ\u00e9ticas a voluntad",
+        "name": "rayos de energ\u00eda",
+        "slug": "rayos-de-energia"
+    },
+    "model": "metahumans.power",
+    "pk": 18
+},
+{
+    "fields": {
+        "description": "puede percibir olores de forma extraordinaria",
+        "name": "Superolfato",
+        "slug": "superolfato"
+    },
+    "model": "metahumans.power",
+    "pk": 19
+},
+{
+    "fields": {
+        "description": "Puede percibir sonidos de forma extraordinaria",
+        "name": "Superoido",
+        "slug": "superoido"
+    },
+    "model": "metahumans.power",
+    "pk": 20
+},
+{
+    "fields": {
         "name": "Los 4 Fant\u00e1sticos",
         "created": "2015-10-06",
         "headquarters": "Edificio Baxter, Manhattan, New York (EEUU)",
@@ -358,6 +403,70 @@
 },
 {
     "fields": {
+        "name": "C\u00edclope",
+        "level": 3,
+        "created": "2015-10-07",
+        "modified": "2015-10-07T08:21:03.000Z",
+        "email": "",
+        "alter_ego": "Scott Summers",
+        "team": 4,
+        "active": true,
+        "slug": "ciclope",
+        "description": "C\u00edclope es un mutante con la capacidad de proyectar potentes explosiones de fuerza a trav\u00e9s de sus ojos. Es visualmente distintivo su visor de rub\u00ed de cuarzo, lo que le confiere el nombre clave de Cyclops (C\u00edclope). Es un estratega brillante, y durante mucho tiempo fue el l\u00edder adjunto del grupo de mutantes conocidos como los X-Men. Hoy en d\u00eda C\u00edclope finalmente reemplaz\u00f3 a su mentor, el Profesor X, para convertirse en el l\u00edder al mando de los X-Men."
+    },
+    "model": "metahumans.superhero",
+    "pk": 10
+},
+{
+    "fields": {
+        "name": "La Cosa",
+        "level": 4,
+        "created": "2015-10-07",
+        "modified": "2015-10-07T08:26:28.813Z",
+        "email": "",
+        "alter_ego": "Benjamin (Ben) Jacob Grimm",
+        "team": 1,
+        "active": true,
+        "slug": "la-cosa",
+        "description": "Ben posee fuerza, durabilidad y resistencia sobrehumanas, todo esto debido a que la tormenta de rayos c\u00f3smicos aument\u00f3 la densidad y resistencia de sus huesos, m\u00fasculos, piel y \u00f3rganos internos. Este aumento de densidad es el que hace que su aspecto sea similar al de un ser formado de piedra."
+    },
+    "model": "metahumans.superhero",
+    "pk": 11
+},
+{
+    "fields": {
+        "name": "La Antorcha Humana",
+        "level": 3,
+        "created": "2015-10-07",
+        "modified": "2015-10-07T08:32:59.073Z",
+        "email": "",
+        "alter_ego": "",
+        "team": 1,
+        "active": true,
+        "slug": "antorcha-humana",
+        "description": ""
+    },
+    "model": "metahumans.superhero",
+    "pk": 12
+},
+{
+    "fields": {
+        "name": "Daredevil",
+        "level": 1,
+        "created": "2015-10-07",
+        "modified": "2015-10-07T08:38:37.027Z",
+        "email": "",
+        "alter_ego": "Matthew Michael Murdock",
+        "team": null,
+        "active": true,
+        "slug": "daredevil",
+        "description": "Al haber perdido la vista, los cuatro sentidos restantes de Daredevil fueron aumentados por la radiaci\u00f3n a niveles superhumanos, en el accidente que tuvo cuando era ni\u00f1o. A pesar de su ceguera, puede \"ver\" a trav\u00e9s de un \"sexto sentido\" que le sirve como un radar similar al de los murci\u00e9lagos, llamado ecolocalizaci\u00f3n"
+    },
+    "model": "metahumans.superhero",
+    "pk": 13
+},
+{
+    "fields": {
         "scale": 10,
         "superhero": 1,
         "power": 1
@@ -508,5 +617,95 @@
     },
     "model": "metahumans.capabilities",
     "pk": 17
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 10,
+        "power": 6
+    },
+    "model": "metahumans.capabilities",
+    "pk": 18
+},
+{
+    "fields": {
+        "scale": 8,
+        "superhero": 11,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 19
+},
+{
+    "fields": {
+        "scale": 8,
+        "superhero": 11,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 20
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 12,
+        "power": 16
+    },
+    "model": "metahumans.capabilities",
+    "pk": 21
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 12,
+        "power": 17
+    },
+    "model": "metahumans.capabilities",
+    "pk": 22
+},
+{
+    "fields": {
+        "scale": 8,
+        "superhero": 12,
+        "power": 18
+    },
+    "model": "metahumans.capabilities",
+    "pk": 23
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 12,
+        "power": 1
+    },
+    "model": "metahumans.capabilities",
+    "pk": 24
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 13,
+        "power": 5
+    },
+    "model": "metahumans.capabilities",
+    "pk": 25
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 13,
+        "power": 19
+    },
+    "model": "metahumans.capabilities",
+    "pk": 26
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 13,
+        "power": 20
+    },
+    "model": "metahumans.capabilities",
+    "pk": 27
 }
 ]
