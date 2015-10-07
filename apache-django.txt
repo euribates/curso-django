@@ -1,0 +1,109 @@
+Como configurar Apache + mod_wsgi + Django
+================================================
+
+Python
+-------------------------------------------------------------------------------
+Instalar Python, o comprobar que está instalado (Version 2.7, no la 3)
+
+Apache
+-------------------------------------------------------------------------------
+Instalar Apache, o comprobar que está instalado, la versión 2.2
+
+Django
+-------------------------------------------------------------------------------
+Instalar Django, o comprobar que esté instalado, la versión recomendada es
+la 1.3. Se puede descargar de::
+
+    <http://www.djangoproject.com/download/1.3.1/tarball/>
+
+Para instalar django, solo descomprimir y ejecutar::
+
+    python setup.py install
+
+WSGI
+-------------------------------------------------------------------------------
+
+Instalar mod_wsgi o comprobar que esté instalado (En windows no lo 
+estará). Descargar la version adecuada para la version de python 
+y de apache que tengamos instalada, en nuestro caso, Apache 2.2 y 
+python 2.7::
+
+    <http://code.google.com/p/modwsgi/downloads/detail?name=mod_wsgi-win32-ap22py27-3.3.so&can=2&q=>
+
+Copiar el archivo como `mod_wsgi.so` en la carpeta `modules` de apache
+
+Activar el módulo, para ello debemos añadir al fichero de configuracion de Apache
+la siguiente línea::
+
+    LoadModule wsgi_module modules/mod_wsgi.so
+
+Una vez instalado `mod_wsgi`, podemos habilitar tambien `mod_info` y así ver
+que se ha cargado el módulo: Para ello, habilitar el modulo `mod_info` y añadir
+esto al `httpd.conf`::
+
+    <Location /server-info>
+        SetHandler server-info
+    </Location>
+
+Los paranoicos de la seguridad deben obviar este paso, ya expone un montón
+de información que podría ser de gran utilidad pra un hipotético atacante.
+
+Configurar Apache para que redireccione a Django
+-------------------------------------------------------------------------------
+
+Con mod_wsgi instalado y activado, añadir lo siguiente al fichero `httpd-conf`.
+
+    WSGIScriptAlias /shield /web/shield/apache/django.wsgi
+
+El directorio /web debe tener permitido el acceso a sus contenidos, ya que, por
+defecto, Apache es muy restrictivo con aquellos directorios que no forman
+parte de la raiz. Si /web cayerá fuera de los directorio explicitamente
+marcados como accesibles, nos daria un error de acceso prohibido. Es fácil
+indicaar que es accesible, basta con indicarselo con la directiva `Directory`::
+
+    <Directory /web/> 
+        Order deny,allow 
+        Allow from all
+    </Directory>
+
+El primer parámetro es la url desde la que queremos servir la aplicación. Por
+ejemplo, si pusieramos solo la barra `/` sería la raiz, en este caso usamos la
+ruta `/shield`. El segundo parámetro es una ruta hacia un fichero de tipo wsgi,
+cuya estructura explicaremos más adelante. Este fichero normalmente lo
+pondremos dentro de un directorio de nuestro proyecto. Ahora Apache sabe que
+para servir cualquier petición que llegue solicitando una url que empiece por
+`/shield`, esta debe ser gestionada de la forma que se indica en el fichero
+`.wsgi`.
+
+Ese fichero `django.wsgi` es en realidad código python, con este contenido::
+
+    import os
+    import sys
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'shield.settings'
+
+    import django.core.handlers.wsgi
+    application = django.core.handlers.wsgi.WSGIHandler()
+
+El nombre de la variable **debe ser** `application`, es parte de la especificación 
+wsgi. Este fichero funciona si el directorio que contiene nuestros proyectos --en
+nuetro caso, el directorio `/web`-- está en el path; de esa manera puede
+cargar el fichero de configuración del proyecto `shield.settings`, ya que lo
+encuentra en `/web/shield/settings`. Si no queremos incluir el directorio
+padre en la configuración del sistema, podemos incluirla facilmente en el propio
+fichero `.wsgi`, ya que es simplemente un script de python. Se podría hacer
+así::
+
+    import os
+    import sys
+
+    path = '/web'
+    if path not in sys.path:
+        sys.path.insert(0, path)
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'shield.settings'
+
+    import django.core.handlers.wsgi
+    application = django.core.handlers.wsgi.WSGIHandler()
+
+
