@@ -137,17 +137,6 @@ las tablas de shield usando xml, la orden sería:
 
     manage.py dumpdata --format xml shield
 
-Además, si guardas los datos en el directorio ``fixtures`` de la aplicación
-con el nombre especial ``initial_data.json``, cada vez que hagas un ``syncdb``
-te actualiza las tablas indicadas con esos datos. Esto puede peligroso, ya que
-se perderían los cambios que se hubieran realizado desde la última vez que se
-hizo el ``dumpdata``. la idea es usar el fichero ``initial_data.json`` solo
-para los datos que tienen que estar obligatoriamente y desde el principio en
-la base de datos: tablas de descripciones, códigos, etc... En el caso de las
-aplicaciones que hemos visto, un ejemplo claro serían las tablas de provincia
-y municipios. Además, cuando usamos las utilidades de testeo de Django, la
-base de datos de pruebas que se crea automáticamente para los tests también
-incluye los datos definidos en ``initial_data.json``.
 
 La orden **loaddata**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -204,6 +193,8 @@ La orden **findstatic**
 
 La orden **collectstatic**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 .. _json: http://www.json.org/
 
 .. _yaml: http://www.yaml.org/
