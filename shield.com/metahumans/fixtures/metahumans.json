@@ -181,6 +181,33 @@
 },
 {
     "fields": {
+        "description": "absorver energ\u00eda y canalizala para aumentar su poder",
+        "name": "Chi",
+        "slug": "chi"
+    },
+    "model": "metahumans.power",
+    "pk": 21
+},
+{
+    "fields": {
+        "description": "puede saltar largas distancias",
+        "name": "Supersalto",
+        "slug": "supersalto"
+    },
+    "model": "metahumans.power",
+    "pk": 22
+},
+{
+    "fields": {
+        "description": "puede curarse rapidamente de heridas, envenenamientos y enfermedades",
+        "name": "Factor de curaci\u00f3n",
+        "slug": "factor-de-curacion"
+    },
+    "model": "metahumans.power",
+    "pk": 23
+},
+{
+    "fields": {
         "name": "Los 4 Fant\u00e1sticos",
         "created": "2015-10-06",
         "headquarters": "Edificio Baxter, Manhattan, New York (EEUU)",
@@ -259,12 +286,26 @@
 },
 {
     "fields": {
+        "name": "Heroes de alquiler",
+        "created": "2015-10-09",
+        "headquarters": "",
+        "modified": "2015-10-09T08:01:41.422Z",
+        "active": true,
+        "slug": "heroes-de-alquiler",
+        "description": ""
+    },
+    "model": "metahumans.team",
+    "pk": 7
+},
+{
+    "fields": {
         "name": "El \u00c1ngel",
         "level": 1,
+        "photo": "fotos/2015/10/09/El-Angel.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T21:54:48.722Z",
+        "modified": "2015-10-09T09:47:05.634Z",
         "email": "",
-        "alter_ego": "",
+        "alter_ego": "Warren Kenneth Worthington III",
         "team": 4,
         "active": true,
         "slug": "angel",
@@ -277,10 +318,11 @@
     "fields": {
         "name": "Namor",
         "level": 5,
+        "photo": "fotos/2015/10/09/Namor.png",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:56:47.450Z",
+        "modified": "2015-10-09T09:35:46.685Z",
         "email": "",
-        "alter_ego": "",
+        "alter_ego": "Namor Mckenzie",
         "team": 3,
         "active": true,
         "slug": "namor",
@@ -293,10 +335,11 @@
     "fields": {
         "name": "Capit\u00e1n Am\u00e9rica",
         "level": 1,
+        "photo": "fotos/2015/10/09/Capitan-America.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:10:00.464Z",
+        "modified": "2015-10-09T09:28:24.340Z",
         "email": "",
-        "alter_ego": "",
+        "alter_ego": "Steve Rogers",
         "team": 2,
         "active": true,
         "slug": "capitan-america",
@@ -309,8 +352,9 @@
     "fields": {
         "name": "Spiderman",
         "level": 4,
+        "photo": "fotos/2015/10/09/Spiderman.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:54:42.982Z",
+        "modified": "2015-10-09T08:55:51.056Z",
         "email": "",
         "alter_ego": "Peter Parker",
         "team": null,
@@ -325,11 +369,12 @@
     "fields": {
         "name": "Power Man",
         "level": 0,
+        "photo": "fotos/2015/10/09/Power-Man.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:24:55.353Z",
+        "modified": "2015-10-09T09:26:13.201Z",
         "email": "",
         "alter_ego": "Luke Cage (Tambi\u00e9n Carl Lucas)",
-        "team": 2,
+        "team": 7,
         "active": true,
         "slug": "power-man",
         "description": "Sometido a un procedimiento experimental que le otorg\u00f3 una piel tan dura como el titanio y una fuerza sobre humana"
@@ -341,8 +386,9 @@
     "fields": {
         "name": "Profesor X",
         "level": 9,
+        "photo": "fotos/2015/10/09/Profesor_X.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:29:15.731Z",
+        "modified": "2015-10-09T09:12:20.492Z",
         "email": "root@xavierinstitute.edu",
         "alter_ego": "Charles Francis Xavie",
         "team": 4,
@@ -357,8 +403,9 @@
     "fields": {
         "name": "Caballero Luna",
         "level": 2,
+        "photo": "fotos/2015/10/09/Caballero-Luna.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:46:02.873Z",
+        "modified": "2015-10-09T09:10:12.757Z",
         "email": "",
         "alter_ego": "Marc Spector",
         "team": 5,
@@ -373,8 +420,9 @@
     "fields": {
         "name": "La Mujer Invisible",
         "level": 8,
+        "photo": "fotos/2015/10/09/Mujer-invisible.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:49:06.607Z",
+        "modified": "2015-10-09T09:08:15.079Z",
         "email": "",
         "alter_ego": "Susan Strom",
         "team": 1,
@@ -389,8 +437,9 @@
     "fields": {
         "name": "El Zumbador",
         "level": 0,
+        "photo": "fotos/2015/10/09/Zumbador.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-06T22:56:20.151Z",
+        "modified": "2015-10-09T09:06:02.789Z",
         "email": "",
         "alter_ego": "El Zumbador",
         "team": 6,
@@ -405,8 +454,9 @@
     "fields": {
         "name": "C\u00edclope",
         "level": 3,
+        "photo": "fotos/2015/10/09/Ciclope.png",
         "created": "2015-10-07",
-        "modified": "2015-10-07T08:21:03.000Z",
+        "modified": "2015-10-09T09:03:27.161Z",
         "email": "",
         "alter_ego": "Scott Summers",
         "team": 4,
@@ -421,8 +471,9 @@
     "fields": {
         "name": "La Cosa",
         "level": 4,
+        "photo": "fotos/2015/10/09/The_Thing.jpg",
         "created": "2015-10-07",
-        "modified": "2015-10-07T08:26:28.813Z",
+        "modified": "2015-10-09T09:01:16.784Z",
         "email": "",
         "alter_ego": "Benjamin (Ben) Jacob Grimm",
         "team": 1,
@@ -437,8 +488,9 @@
     "fields": {
         "name": "La Antorcha Humana",
         "level": 3,
+        "photo": "fotos/2015/10/09/Human-Torch.png",
         "created": "2015-10-07",
-        "modified": "2015-10-07T08:32:59.073Z",
+        "modified": "2015-10-09T08:53:34.910Z",
         "email": "",
         "alter_ego": "",
         "team": 1,
@@ -453,8 +505,9 @@
     "fields": {
         "name": "Daredevil",
         "level": 1,
+        "photo": "fotos/2015/10/09/Daredevil.jpg",
         "created": "2015-10-07",
-        "modified": "2015-10-07T08:38:37.027Z",
+        "modified": "2015-10-09T08:45:42.632Z",
         "email": "",
         "alter_ego": "Matthew Michael Murdock",
         "team": null,
@@ -464,6 +517,74 @@
     },
     "model": "metahumans.superhero",
     "pk": 13
+},
+{
+    "fields": {
+        "name": "Pu\u00f1o de Hierro",
+        "level": 2,
+        "photo": "fotos/2015/10/09/Iron-Fist.jpg",
+        "created": "2015-10-09",
+        "modified": "2015-10-09T08:43:32.944Z",
+        "email": "",
+        "alter_ego": "Daniel Thomas Rand",
+        "team": 7,
+        "active": true,
+        "slug": "iron-fist",
+        "description": "Maestro Kung Fu. Fuerza, agilidad, aguante,velocidad, durabilidad y reflejos al l\u00edmite humano. Control de su sistema nervioso. Manipulaci\u00f3n del \"chi\", o energ\u00eda espiritual. Puede enfocar su chi para obtener diversas habilidades"
+    },
+    "model": "metahumans.superhero",
+    "pk": 14
+},
+{
+    "fields": {
+        "name": "Pantera Negra",
+        "level": 5,
+        "photo": "fotos/2015/10/09/Pantera-Negra.jpg",
+        "created": "2015-10-09",
+        "modified": "2015-10-09T09:32:03.661Z",
+        "email": "",
+        "alter_ego": "T'Challa",
+        "team": 2,
+        "active": true,
+        "slug": "pantera-negra",
+        "description": "Poderoso, culto y noble monarca, T'Challa sucedi\u00f3 a su padre como rey de Wakanda, una peque\u00f1a y retirada naci\u00f3n africana"
+    },
+    "model": "metahumans.superhero",
+    "pk": 15
+},
+{
+    "fields": {
+        "name": "Jessica Jones",
+        "level": 1,
+        "photo": "fotos/2015/10/09/Jessica-Jones.jpg",
+        "created": "2015-10-09",
+        "modified": "2015-10-09T09:53:48.712Z",
+        "email": "",
+        "alter_ego": "Jessica Campbell Jones",
+        "team": null,
+        "active": false,
+        "slug": "jessica-jones",
+        "description": "Antigua superheroina, actalmente tiene una agencia de investigaci\u00f3n privada: Alias Investigations"
+    },
+    "model": "metahumans.superhero",
+    "pk": 16
+},
+{
+    "fields": {
+        "name": "Hulk Rojo",
+        "level": 8,
+        "photo": "fotos/2015/10/09/hulk_Rojo.jpg",
+        "created": "2015-10-09",
+        "modified": "2015-10-09T10:03:59.823Z",
+        "email": "",
+        "alter_ego": "Thaddeus E. \"Thunderbolt\" Ross",
+        "team": null,
+        "active": true,
+        "slug": "hulk-rojo",
+        "description": "Red Hulk fue creado para ser un adversario desinhibido y t\u00e1cticamente inteligente para Hulk"
+    },
+    "model": "metahumans.superhero",
+    "pk": 17
 },
 {
     "fields": {
@@ -707,5 +828,140 @@
     },
     "model": "metahumans.capabilities",
     "pk": 27
+},
+{
+    "fields": {
+        "scale": 2,
+        "superhero": 14,
+        "power": 4
+    },
+    "model": "metahumans.capabilities",
+    "pk": 28
+},
+{
+    "fields": {
+        "scale": 2,
+        "superhero": 14,
+        "power": 15
+    },
+    "model": "metahumans.capabilities",
+    "pk": 29
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 14,
+        "power": 21
+    },
+    "model": "metahumans.capabilities",
+    "pk": 30
+},
+{
+    "fields": {
+        "scale": 2,
+        "superhero": 14,
+        "power": 17
+    },
+    "model": "metahumans.capabilities",
+    "pk": 31
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 15,
+        "power": 3
+    },
+    "model": "metahumans.capabilities",
+    "pk": 32
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 15,
+        "power": 19
+    },
+    "model": "metahumans.capabilities",
+    "pk": 33
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 15,
+        "power": 20
+    },
+    "model": "metahumans.capabilities",
+    "pk": 34
+},
+{
+    "fields": {
+        "scale": 2,
+        "superhero": 15,
+        "power": 4
+    },
+    "model": "metahumans.capabilities",
+    "pk": 35
+},
+{
+    "fields": {
+        "scale": 8,
+        "superhero": 16,
+        "power": 1
+    },
+    "model": "metahumans.capabilities",
+    "pk": 36
+},
+{
+    "fields": {
+        "scale": 5,
+        "superhero": 16,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 37
+},
+{
+    "fields": {
+        "scale": 7,
+        "superhero": 16,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 38
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 17,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 39
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 17,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 40
+},
+{
+    "fields": {
+        "scale": 6,
+        "superhero": 17,
+        "power": 22
+    },
+    "model": "metahumans.capabilities",
+    "pk": 41
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 17,
+        "power": 23
+    },
+    "model": "metahumans.capabilities",
+    "pk": 42
 }
 ]
