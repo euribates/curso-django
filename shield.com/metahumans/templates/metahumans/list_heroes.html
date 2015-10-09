@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <ul>
+    {% for h in heroes %}
+      <li>{{ h.name }} ({{ h.level }})</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+

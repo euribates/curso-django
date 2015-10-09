@@ -31,6 +31,7 @@ def homepage(request):
 
 
 def view_all_heroes(request):
-    return render(request, 'not_imp.html', {
-        'message': '¡En obras! Pronto abriremos',
+    return render(request, 'metahumans/list_heroes.html', {
+        'heroes': models.SuperHero.objects.all(),
+        'title': 'Listado de superhéroes',
         })
