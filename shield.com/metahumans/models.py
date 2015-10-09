@@ -47,15 +47,11 @@ class Team(models.Model):
     description = models.CharField(max_length=530, blank=True)
 
     def __str__(self):
-        if self.active:
-            return format_html(self.name)
-        else:
-            return format_html(
-                '<span style="text-decoration: overlie;">'
-                '{}'
-                '</span>'.format(self.name))
+        return self.name
 
-    __str__.allow_tags = True
+    def num_members(self):
+        return self.superhero_set.all().count()
+
 
 @python_2_unicode_compatible
 class SuperHero(models.Model):
