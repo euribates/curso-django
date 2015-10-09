@@ -9,6 +9,7 @@ from __future__ import unicode_literals
 from django.db import models
 from django.core.validators import MaxValueValidator
 from django.utils.encoding import python_2_unicode_compatible
+from django.utils.html import format_html
 
 from .validators import between_zero_and_one_hundred
 
@@ -47,11 +48,14 @@ class Team(models.Model):
 
     def __str__(self):
         if self.active:
-            return self.name
+            return format_html(self.name)
         else:
-            return '{} (Inactivo)'.format(self.name)
+            return format_html(
+                '<span style="text-decoration: overlie;">'
+                '{}'
+                '</span>'.format(self.name))
 
-
+    __str__.allow_tags = True
 
 @python_2_unicode_compatible
 class SuperHero(models.Model):
@@ -75,6 +79,10 @@ class SuperHero(models.Model):
     powers = models.ManyToManyField(Power, through='Capabilities')
     description = models.CharField(max_length=530, blank=True)
     alter_ego = models.CharField(max_length=120, blank=True)
+    photo = models.ImageField(upload_to='fotos/%Y/%m/%d',
+        max_length=375,
+        blank=True
+        )
 
     def __str__(self):
         if self.team:
@@ -88,6 +96,13 @@ class SuperHero(models.Model):
             return ', '.join([_.name for _ in powers])
         else:
             return 'Ninguno.'
+
+    def has_photo(self):
+        if self.photo:
+            return True
+        else:
+            return False
+    has_photo.boolean = True
 
 @python_2_unicode_compatible
 class Capabilities(models.Model):
