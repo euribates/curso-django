@@ -14,7 +14,7 @@ las cosas en Django. Una de estas reglas es conocida por sus iniciales en
 inglés DRY_ (*Don't Repeat Yourself*). DRY presupone que toda duplicción del
 código, ya sea por descuido o a propósito, conduce a pesadillas durante el
 mantenimiento, dificulta las mejoras e incluye contradicciones lógicas. Un
-ejemplo claro fue el llamado `problema del año 2000`_; en la mayoría de los
+ejemplo claro fue el llamado *problema del año 2000*; en la mayoría de los
 casos  el código responsable de trabajar con fechas no estaba unificado, sino
 copiado y distribuido  a lo largo de todo el código, lo que dificultaba
 enormente arreglar el problema.

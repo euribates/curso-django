@@ -9,7 +9,7 @@ Taller de desarrollo de Aplicaciones Web con Django
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    introduccion
    desarrollo_web
