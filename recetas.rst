@@ -48,8 +48,8 @@ la siguiente entrada
 ¿Cómo tener diferentes entornos de desarrollo/explotación/pruebas?
 -------------------------------------------------------------------------
 
-Mi solución actual (Adaptada del muy recomendable libro 
-`Two Scoops of Django`_) consiste en tener un ``settings.py``
+Mi solución actual, adaptada del muy recomendable 
+libro `Two Scoops of Django`_, consiste en tener un ``settings.py``
 que será el que se use en despliege y luego un fichero 
 ``development.py``, que simplemente importa todo el contenido
 del ``settings.py`` y realiza las modificaciones que crea oportunas.
