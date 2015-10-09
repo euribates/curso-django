@@ -3,6 +3,7 @@ syntax: regexp
 ^_build
 ^shield/static
 ^shield/media
+^shield.com/files
 \.venv
 
 syntax:glob

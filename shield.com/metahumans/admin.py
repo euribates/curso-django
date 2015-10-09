@@ -23,7 +23,7 @@ class CapabilitiesInline(admin.TabularInline):
     model = Capabilities
 
 class SuperHeroAdmin(admin.ModelAdmin):
-    list_display = ('slug', '__str__', 'active', 'list_of_powers')
+    list_display = ('__str__', 'active', 'list_of_powers', 'has_photo')
     list_filter = ('active', 'team__name')
     prepopulated_fields = {"slug": ("name",)}
     search_fields = ['slug', 'name', 'headquarters', 'description']
