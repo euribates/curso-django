@@ -3,7 +3,7 @@ de introducción a Django documentation master file, created by
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Introducción al desarrollo de Aplicaciones Web con Django
+Taller de desarrollo de Aplicaciones Web con Django
 ===============================================================================
 
 Contents:
@@ -24,6 +24,7 @@ Contents:
    manage
    ejemplo_01
    recursos 
+   recetas
 
 Indices and tables
 ==================

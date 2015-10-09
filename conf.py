@@ -40,15 +40,15 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Curso de introducción a Django'
-copyright = u'2011, Juan Ignacio Rodríguez de León'
+project = u'Taller de introducción a Django'
+copyright = u'2015, Juan Ignacio Rodríguez de León'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '1.1'
 # The full version, including alpha/beta/rc tags.
 release = 'alpha'
 
@@ -91,7 +91,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -178,7 +178,7 @@ htmlhelp_basename = 'CursodeintroduccinaDjangodoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'CursodeintroduccinaDjango.tex', u'Curso de introducción a Django Documentation',
+  ('index', 'TallerIntroduccinDjango.tex', u'Taller de introducción a Django',
    u'Juan Ignacio Rodríguez de León', 'manual'),
 ]
 
@@ -211,7 +211,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'cursodeintroduccinadjango', u'Curso de introducción a Django Documentation',
+    ('index', 'TallerIntroduccinDjango', u'Taller de introducción a Django',
      [u'Juan Ignacio Rodríguez de León'], 1)
 ]
 
@@ -219,10 +219,10 @@ man_pages = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Curso de introducción a Django'
+epub_title = u'Taller de introducción a Django'
 epub_author = u'Juan Ignacio Rodríguez de León'
 epub_publisher = u'Juan Ignacio Rodríguez de León'
-epub_copyright = u'2011, Juan Ignacio Rodríguez de León'
+epub_copyright = u'2015, Juan Ignacio Rodríguez de León'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
