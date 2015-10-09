@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('metahumans', '0004_auto_20151006_2323'),
+    ]
+
+    operations = [
+        migrations.AddField(
+            model_name='superhero',
+            name='photo',
+            field=models.ImageField(max_length=375, upload_to='fotos/%Y/%m/%d', blank=True),
+        ),
+    ]
