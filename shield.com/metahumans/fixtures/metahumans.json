@@ -208,6 +208,33 @@
 },
 {
     "fields": {
+        "description": "Controlar a otras personas si consigue establecer contacto ocular",
+        "name": "Hipnotismo",
+        "slug": "hipnotismo"
+    },
+    "model": "metahumans.power",
+    "pk": 24
+},
+{
+    "fields": {
+        "description": "cambiar de forma",
+        "name": "Metamorfo",
+        "slug": "metamorfo"
+    },
+    "model": "metahumans.power",
+    "pk": 25
+},
+{
+    "fields": {
+        "description": "alargar y modificar su estructura corporal",
+        "name": "Superelasticidad",
+        "slug": "superelasticidad"
+    },
+    "model": "metahumans.power",
+    "pk": 26
+},
+{
+    "fields": {
         "name": "Los 4 Fant\u00e1sticos",
         "created": "2015-10-06",
         "headquarters": "Edificio Baxter, Manhattan, New York (EEUU)",
@@ -337,9 +364,9 @@
         "level": 1,
         "photo": "fotos/2015/10/09/Capitan-America.jpg",
         "created": "2015-10-06",
-        "modified": "2015-10-09T09:28:24.340Z",
+        "modified": "2015-10-13T07:52:02.248Z",
         "email": "",
-        "alter_ego": "Steve Rogers",
+        "alter_ego": "Steve Grant Rogers",
         "team": 2,
         "active": true,
         "slug": "capitan-america",
@@ -585,6 +612,40 @@
     },
     "model": "metahumans.superhero",
     "pk": 17
+},
+{
+    "fields": {
+        "name": "Craneo Rojo",
+        "level": 4,
+        "photo": "fotos/2015/10/13/Craneo-Rojo.png",
+        "created": "2015-10-13",
+        "modified": "2015-10-13T09:34:03.067Z",
+        "email": "",
+        "alter_ego": "Johann Shmidt",
+        "team": null,
+        "active": true,
+        "slug": "craneo-rojo",
+        "description": "Johann Shmidt era un joven alem\u00e1n resentido con el mundo, sin estudios ni especializaci\u00f3n alguna, pero su destino cambi\u00f3 cuando conoci\u00f3 a Adolf Hitler. El dictador lo convirti\u00f3 en su pupilo y protegido, convirtiendo al joven Shmidt en el Cr\u00e1neo Rojo, una figura tan terror\u00edfica que incluso inspiraba terror en su mentor."
+    },
+    "model": "metahumans.superhero",
+    "pk": 18
+},
+{
+    "fields": {
+        "name": "Super Skrull",
+        "level": 9,
+        "photo": "fotos/2015/10/13/Super-Skrull.jpg",
+        "created": "2015-10-13",
+        "modified": "2015-10-13T09:49:20.025Z",
+        "email": "",
+        "alter_ego": "Kl'rt",
+        "team": null,
+        "active": true,
+        "slug": "super-skrull",
+        "description": "Kl'rt -m\u00e1s com\u00fanmente conocido como el Super-Skrull- fue mejorado artificialmente y dotado de las habilidades combinadas de los Cuatro Fant\u00e1sticos. Los niveles de energ\u00eda de Kl'rt, sin embargo, superaron los originales: M\u00e1s fuerte que la Cosa; vuelo superior y mayor habilidad piroquin\u00e9tica que la Antorcha Humana; un mejor control de la invisibilidad y la telequinesis que la Mujer Invisible; y una habilidad de estirarse m\u00e1s all\u00e1 que la de Mr. Fant\u00e1stico. Tambi\u00e9n conserv\u00f3 sus habilidades innatas Skrull, como cambiar de forma."
+    },
+    "model": "metahumans.superhero",
+    "pk": 19
 },
 {
     "fields": {
@@ -963,5 +1024,95 @@
     },
     "model": "metahumans.capabilities",
     "pk": 42
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 1
+    },
+    "model": "metahumans.capabilities",
+    "pk": 43
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 2
+    },
+    "model": "metahumans.capabilities",
+    "pk": 44
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 10
+    },
+    "model": "metahumans.capabilities",
+    "pk": 45
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 13
+    },
+    "model": "metahumans.capabilities",
+    "pk": 46
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 14
+    },
+    "model": "metahumans.capabilities",
+    "pk": 47
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 24
+    },
+    "model": "metahumans.capabilities",
+    "pk": 48
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 17
+    },
+    "model": "metahumans.capabilities",
+    "pk": 49
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 18
+    },
+    "model": "metahumans.capabilities",
+    "pk": 50
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 25
+    },
+    "model": "metahumans.capabilities",
+    "pk": 51
+},
+{
+    "fields": {
+        "scale": 10,
+        "superhero": 19,
+        "power": 26
+    },
+    "model": "metahumans.capabilities",
+    "pk": 52
 }
 ]
