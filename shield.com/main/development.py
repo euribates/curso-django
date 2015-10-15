@@ -10,6 +10,17 @@ from main.settings import *
 
 DEVELOPMENT = True
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+
 INSTALLED_APPS += (
     'debug_toolbar',
     )
+
+
