@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="alert">Listado de metahumanos <small>por nivel de peligrosidad</small></h2>
+
+{% regroup heroes by level as levels_list %}
+{% for b in levels_list %}
+  <h2>Nivel {{ b.grouper }}</h2>
+   <ul>
+    {% for sh in b.list %}
+        <li>{{ sh.name }}</li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+{% endblock %}
+
