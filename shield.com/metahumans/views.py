@@ -13,25 +13,25 @@ from metahumans import models
 
 # Create your views here.
 
-def homepage(request):
-    t = Template('''<html>
-    <head>
-        <title>Shield.com homepage</title>
-    </head>
-    <body>
-    <h1>Bienvenidos a S.H.I.E.L.D.</h1>
-    <h2>Sistema Homologado de Inteligencia, Espionaje, Logística y Defensa</h2>
-    <p>{{ message }}</p>
-    </body>
-    </html>''')
-    ctx = RequestContext(request, {
-        'message': '¡En obras! Pronto abriremos',
-        })
-    return HttpResponse(t.render(ctx))
 
 
-def view_all_heroes(request):
+
+def all_heroes(request):
     return render(request, 'metahumans/list_heroes.html', {
-        'heroes': models.SuperHero.objects.all(),
+        'heroes': models.SuperHero.objects.select_related('team').all(),
         'title': 'Listado de superhéroes',
         })
+
+def levels(request):
+    return render(request, 'metahumans/levels.html', {
+        'heroes': models.SuperHero.objects.only('name', 'level').all().order_by('-level'),
+        'title': 'Listado de superhéroes por niveles',
+        })
+
+def hero(request, slug):
+    sh = models.SuperHero.objects.get(slug=slug)
+    return render(request, 'metahumans/hero.html', {
+        'hero': 'hero'
+        'title': hero.name,
+        })
+
