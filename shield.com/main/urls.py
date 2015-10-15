@@ -23,7 +23,8 @@ urlpatterns = [
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^heroes/$', 'metahumans.views.all_heroes', name='all_heroes'),
-    url(r'^heroes/([A-Za-z0-9_]+)/$', 'metahumans.views.detail_hero', name='hero'),
+    url(r'^heroes/([A-Za-z0-9\-_]+)/$', 'metahumans.views.hero_details',
+        name='hero_details'),
     url(r'^niveles/$', 'metahumans.views.list_levels', name='niveles'),
 ]
 

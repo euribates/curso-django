@@ -3,7 +3,8 @@
 {% block content %}
   <ul>
     {% for h in heroes %}
-      <li>{{ h.name }} ({{ h.team|default:"Ninguno" }})</li>
+    <li><a href="{% url 'hero_details' h.slug %}">{{ h.name }}</a>
+        (Equipo: {{ h.team|default:"Ninguno" }})</li>
     {% endfor %}
   </ul>
 {% endblock %}
