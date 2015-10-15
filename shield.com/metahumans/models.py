@@ -10,6 +10,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.html import format_html
+from django.core.urlresolvers import reverse
 
 from .validators import between_zero_and_one_hundred
 
@@ -85,6 +86,9 @@ class SuperHero(models.Model):
             return '{} ({})'.format(self.name, self.team.name)
         else:
             return self.name
+
+    def get_absolute_url(self):
+        return reverse('hero_details', args=(self.slug,))
 
     def list_of_powers(self):
         powers = list(self.powers.all())

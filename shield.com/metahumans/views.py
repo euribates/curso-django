@@ -28,9 +28,9 @@ def list_levels(request):
         'title': 'Listado de superhéroes por niveles',
         })
 
-def detail_hero(request, slug):
+def hero_details(request, slug):
     sh = models.SuperHero.objects.get(slug=slug)
-    return render(request, 'metahumans/details_hero.html', {
+    return render(request, 'metahumans/hero_details.html', {
         'superhero': sh,
         'title': sh.name,
         })
