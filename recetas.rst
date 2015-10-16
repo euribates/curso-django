@@ -1,4 +1,4 @@
-Recetas Habituales en Django
+Recetas Habituales en Django (Que siempre se me olvidan)
 =======================================================================
 
 ¿Cómo probar las páginas de errores (404, etc...) en desarrollo?
@@ -31,7 +31,7 @@ servidor de desarrollo de Django. Citando la documentación oficial:
 
 Normalmente el primer paso para poder optimizar Django consiste en analizar
 el número de consultas, así como los tiempos de ejecución de las mismas. Para
-ello hay una extensión muy recomendale: **Django-debug-toolbar**.
+ello hay una extensión muy recomendable: **Django-debug-toolbar**.
 
     pip install django-debug-toolbar
 
@@ -42,7 +42,7 @@ ello hay una extensión muy recomendale: **Django-debug-toolbar**.
     various debug information about the current request/response and when
     clicked, display more details about the panel’s content.
 
-Lo ideal es poner esta app en desarrollo, y no en el despliege final. Véase
+Lo ideal es poner esta app en desarrollo, y no en el despliegue final. Véase
 la siguiente entrada
 
 ¿Cómo tener diferentes entornos de desarrollo/explotación/pruebas?
@@ -50,7 +50,7 @@ la siguiente entrada
 
 Mi solución actual, adaptada del muy recomendable 
 libro `Two Scoops of Django`_, consiste en tener un ``settings.py``
-que será el que se use en despliege y luego un fichero 
+que será el que se use en despliegue y luego un fichero 
 ``development.py``, que simplemente importa todo el contenido
 del ``settings.py`` y realiza las modificaciones que crea oportunas.
 

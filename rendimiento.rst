@@ -204,7 +204,7 @@ nunca. Pero a veces sabemos, con toda seguridad, que vamos a necesitar esos
 datos relacionados.
 
 A modo de ejemplo, supongamos que queremos un listado de superheroes que
-incluya el nombre del equipo al que pertenecen. El siguiente código funciona:
+incluya el nombre del equipo al que pertenecen. El siguiente código funciona::
 
     # En la vista:
     superheroes = models.SuperHero.objects.all()
@@ -285,10 +285,10 @@ consulta normal te trae todos los campos, lo que puede
 hacer que la consulta tarde más. Podemos especificar que solo
 queremos cargar determinados campos usando el método ``only``.
 El resto de los atributos no se cargam pero siguen estando disponibles si
- se solicitan, usando *lazy loading*.
+se solicitan, usando *lazy loading*.
 
 Por ejemplo, un listado donde solo muestro el nombre del superheroe
- y su nivel, se puede resolver con::
+y su nivel, se puede resolver con::
 
     superheroes = models.SuperHero.objects.all()
 
@@ -298,6 +298,20 @@ transferencia de datos se optimice::
     superheroes = models.SuperHero.objects.only('name', 'level').all()
     
 
+Enlaces interantes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++ https://docs.djangoproject.com/en/1.8/topics/performance/
+
++ https://blog.mozilla.org/webdev/2011/12/15/django-optimization-story-thousand-times-faster/
+
++ http://lukeplant.me.uk/blog/posts/some-quick-django-optimisation-lessons/
+
++ http://stackoverflow.com/questions/4568086/django-optimizing-queries
+
++ http://www.revsys.com/blog/2015/may/06/django-performance-simple-things/
+
++ https://docs.djangoproject.com/en/1.8/ref/databases/#persistent-connections
 
 
 .. _django-toolbar: https://django-debug-toolbar.readthedocs.org/en/1.3/
@@ -310,16 +324,6 @@ transferencia de datos se optimice::
 
 .. _Memcached: http://memcached.org/
 .. _Redis: http://redis.io/
+.. _Join: https://es.wikipedia.org/Join
 
-https://docs.djangoproject.com/en/1.8/topics/performance/
-
-https://blog.mozilla.org/webdev/2011/12/15/django-optimization-story-thousand-times-faster/
-
-http://lukeplant.me.uk/blog/posts/some-quick-django-optimisation-lessons/
-
-http://stackoverflow.com/questions/4568086/django-optimizing-queries
-
-http://www.revsys.com/blog/2015/may/06/django-performance-simple-things/
-
-https://docs.djangoproject.com/en/1.8/ref/databases/#persistent-connections
 
