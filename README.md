@@ -24,11 +24,11 @@ de introducción a Django (Para agentes novatos de SHIELD)
 
 ### ¿Se puede compartir? Y si es así, ¿Con qué licencia?###
 
-![Cc-nc.svg.png](https://bitbucket.org/repo/5nkkX/images/3024344249-Cc-nc.svg.png)
-
 El contenido original de este repositorio (Lo que no esté en 
 las carpetas llamadas ``extra``) está licencia con 
 [Creative-Commons No Commercial](https://creativecommons.org/licenses/by/4.0/) (CC BY-NC). O sea que si, puedes compartirlo, pero no cobrar por el contenido del mismo.
+
+![Cc-nc.svg.png](https://bitbucket.org/repo/5nkkX/images/3024344249-Cc-nc.svg.png)
 
 ### ¿Y si quiero contribuir? ###
 
